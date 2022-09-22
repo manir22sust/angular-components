@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+
+<h3>{{ fromParent }}</h3>
+
+<h5>{{ secondParent }}</h5>
+
+<h1>{{ lastParent }}</h1>
+
+<app-post-list
+  [fromPost]="messagePost"
+  [lastPost]="lastMessage"
+  (postMess)="postlistout($event)"
+></app-post-list>
+
+<button (click)="sendMessage()">Click</button>
+<br /><br />
+<button (click)="submit()">submit</button>
